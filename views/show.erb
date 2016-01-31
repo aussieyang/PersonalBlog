@@ -1,0 +1,33 @@
+<div class="show-container">
+
+  <div class="row">
+
+    <div class="col-md-12">
+      <!-- Heading -->
+      <h3><%= @post.heading %></h3>
+      <!-- Date -->
+      <p><%= @post.postdate %></p>
+
+      <p>By <%= @post.user.name if @post.user %> </p>
+
+      <div class="image-container"> <img src="<%= @post.image %>" alt="" class=".img-responsive"> </div>
+
+      <p><%= @post.post %></p>
+
+  <% if current_user.email == "yang.j.li91@gmail.com" || current_user.id == @post.user.id %>
+    <form action="/posts/<%= @post.id %>/edit">
+      <div class="col-sm-6">
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Edit</button>
+      </div>
+    </form>
+
+      <div class="col-sm-6">
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Delete</button>
+      </div>
+  <% end %>
+
+    </div>
+
+  </div>
+
+</div>

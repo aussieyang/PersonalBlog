@@ -1,0 +1,30 @@
+<div class="post-container">
+
+    <form action="/posts" method="post" class="form-signin">
+
+      <label for="inputTitle">Heading</label>
+      <input name="heading" type="text" id="input-email" class="form-control" placeholder="Random Blog" required autofocus>
+
+      <label for="inputTopic">Topic</label>
+      <select name="topic" class="form-control" id="topic-select">
+          <option>Thoughts</option>
+          <option>News</option>
+          <option>Tech</option>
+          <option>Art and Music</option>
+          <option>Culture</option>
+          <option>Misc.</option>
+      </select>
+
+      <label for="post">Post:</label>
+      <textarea name="post" class="form-control" rows="10" id="input-post"></textarea>
+
+      <div class="breaker"></div>
+
+      <label for="imgurl">Image URL</label>
+      <input name="image_url" type="text" class="form-control" required autofocus>
+
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Post</button>
+
+    </form>
+
+</div>

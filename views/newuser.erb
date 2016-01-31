@@ -1,0 +1,30 @@
+<div class="user-container">
+
+    <form action="/users" method="post" class="form-signin">
+
+      <label for="inputEmail">Email</label>
+      <input name="email" type="email" id="input-email" class="form-control" placeholder="something@gmail.com" required autofocus>
+
+      <label for="inputPassword">Password</label>
+      <input name="password" type="password" id="input-password" class="form-control" placeholder="password12345" required autofocus>
+
+      <label for="inputName">Name</label>
+      <input name="name" type="text" id="input-name" class="form-control" placeholder="John Smith" required autofocus>
+
+      <label for="Portrait">Portrait URL</label>
+      <input name="portrait" type="text" id="input-imgurl" class="form-control" value="http://lorempixel.com/image_output/abstract-q-c-250-250-9.jpg" required autofocus>
+      <p>Please link a square image, preferably 250px by 250px</p>
+
+      <label for="comment">Git/Personal Page</label>
+      <input name="git" type="text" class="form-control" required autofocus placeholder="https://github.com/somebody">
+
+      <label for="comment">About Me:</label>
+      <textarea name="about" class="form-control" rows="10" id="input-post"></textarea>
+
+      <div class="breaker"></div>
+
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+
+    </form>
+
+</div>

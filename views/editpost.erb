@@ -1,0 +1,33 @@
+<div class="post-container">
+
+    <form action="/posts/<%= @post.id %>" method="post" class="form-signin">
+      <input type="hidden" name="_method" value="patch">
+
+      <label for="inputTitle">Heading</label>
+      <input name="heading" value="<%= @post.heading %>" type="text" id="input-email" class="form-control" required autofocus>
+
+      <label for="inputTopic">Topic</label>
+      <select name="topic" class="form-control" id="topic-select">
+          <option>Thoughts</option>
+          <option>News</option>
+          <option>Tech</option>
+          <option>Art and Music</option>
+          <option>Culture</option>
+          <option>Misc.</option>
+      </select>
+
+      <label for="post">Post:</label>
+      <textarea name="post" class="form-control" rows="10" id="input-post">
+        <%= @post.post %>
+      </textarea>
+
+      <div class="breaker"></div>
+
+      <label for="imgurl">Image URL</label>
+      <input name="image_url" value="<%= @post.image %>" type="text" class="form-control" required autofocus>
+
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Save</button>
+
+    </form>
+
+</div>

@@ -1,0 +1,92 @@
+/*global*/
+
+.breaker {
+  height: 20px
+}
+
+.breaker-lg {
+  height: 80px
+}
+
+/*index*/
+.jumbotron {
+  margin-top: 50px
+}
+
+.image-container {
+  width: 100%;
+  padding: 15px
+}
+
+.image-container img {
+  width: 100%
+}
+
+#pinned-posts {
+  margin-bottom: 50px
+}
+
+#recent-posts {
+  margin-bottom: 50px
+}
+
+/*login*/
+.login-container {
+  margin: 0 auto;
+  margin-top: 120px;
+  max-width: 400px;
+  padding: 50px
+}
+
+.login-container p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: grey
+}
+
+/*newpost & editpost*/
+.post-container {
+  margin: 0 auto;
+  margin-top: 80px;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.post-container input {
+  margin-bottom: 20px
+}
+
+.post-container select {
+  margin-bottom: 20px
+}
+
+
+/*show*/
+.show-container {
+  margin: 0 auto;
+  margin-top: 80px;
+  max-width: 800px;
+  padding: 20px;
+}
+
+/*newuser*/
+.user-container {
+  margin: 0 auto;
+  margin-top: 80px;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.user-container input {
+  margin-bottom: 20px
+}
+
+.user-container select {
+  margin-bottom: 20px
+}
+
+.user-container p {
+  margin-top: -20px;
+  font-size: 0.8em;
+  text-align: right
+}
