@@ -26,7 +26,12 @@
       <label for="imgurl">Image URL</label>
       <input name="image_url" value="<%= @post.image %>" type="text" class="form-control" required autofocus>
 
+      <label for="imgurl">Summary</label>
+      <input name="summary" type="text" placeholder="One liner about your post..." id="summary" class="form-control" required autofocus>
+
+      <% if logged_in? && current_user.email == "yang.j.li91@gmail.com" || logged_in? && current_user.id == @post.user.id %>
       <button class="btn btn-lg btn-primary btn-block" type="submit">Save</button>
+      <% end %>
 
     </form>
 

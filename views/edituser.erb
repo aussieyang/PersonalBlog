@@ -1,0 +1,31 @@
+<div class="user-container">
+
+    <form action="/users/<%=@user.id%>" method="post" class="form-signin">
+      <input type="hidden" name="_method" value="patch">
+
+        <label for="inputEmail">Email</label>
+        <input name="email" type="email" id="input-email" class="form-control" value="<%=@user.email%>" required autofocus>
+
+        <label for="inputPassword">New Password</label>
+        <input name="password" type="password" id="input-password" class="form-control" placeholder="*********" required autofocus>
+
+        <label for="inputName">Name</label>
+        <input name="name" type="text" id="input-name" class="form-control" value="<%=@user.name%>" required autofocus>
+
+        <label for="Portrait">Portrait URL</label>
+        <input name="portrait" type="text" id="input-imgurl" class="form-control" value="<%=@user.portrait%>" required autofocus>
+        <p>Please link a square image, preferably 250px by 250px</p>
+
+        <label for="comment">Git/Personal Page</label>
+        <input name="git" type="text" class="form-control" value="<%=@user.git%>" required autofocus>
+
+        <label for="comment">About Me:</label>
+        <textarea name="about" class="form-control" rows="10" id="input-post"><%=@user.about%></textarea>
+
+        <div class="breaker"></div>
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Submit changes</button>
+
+    </form>
+
+</div>

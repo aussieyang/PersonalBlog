@@ -14,17 +14,30 @@
 
       <p><%= @post.post %></p>
 
-  <% if current_user.email == "yang.j.li91@gmail.com" || current_user.id == @post.user.id %>
+  <% if logged_in? && current_user.email == "yang.j.li91@gmail.com" || logged_in? && current_user.id == @post.user.id %>
     <form action="/posts/<%= @post.id %>/edit">
-      <div class="col-sm-6">
+      <div class="col-sm-4">
         <button class="btn btn-lg btn-primary btn-block" type="submit">Edit</button>
       </div>
     </form>
 
-      <div class="col-sm-6">
+    <form action="/posts/<%= @post.id %>" method="post">
+      <input type="hidden" name="_method" value="delete">
+      <div class="col-sm-4">
         <button class="btn btn-lg btn-primary btn-block" type="submit">Delete</button>
       </div>
+    </form>
+
   <% end %>
+
+  <% if logged_in? && current_user.email == "yang.j.li91@gmail.com" %>
+    <form action="/posts/<%= @post.id %>/edit/">
+      <div class="col-sm-4">
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Feature</button>
+      </div>
+    </form>
+  <% end %>
+
 
     </div>
 

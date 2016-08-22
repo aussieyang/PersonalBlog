@@ -23,3 +23,7 @@ CREATE TABLE users (
 );
 
 -- Not yet executed
+
+ALTER TABLE posts ADD featured BOOLEAN;
+
+ALTER TABLE posts ADD summary VARCHAR(500);

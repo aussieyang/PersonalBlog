@@ -8,6 +8,10 @@
   height: 80px
 }
 
+#logout {
+  margin-left: -25px;
+}
+
 /*index*/
 .jumbotron {
   margin-top: 50px
@@ -28,6 +32,7 @@
 
 #recent-posts {
   margin-bottom: 50px
+  text-align: center;
 }
 
 /*login*/
@@ -90,3 +95,23 @@
   font-size: 0.8em;
   text-align: right
 }
+
+/*showuser*/
+
+.footer {
+  display: inline-block;
+  width: 100%;
+}
+
+#profile-img {
+  width: 45%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  float: left;
+}
+
+#edit-user, #delete-user {
+  margin-top: 10px;
+}
+
+/*overwriting bootstrap*/
